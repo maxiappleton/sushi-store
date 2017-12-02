@@ -24,7 +24,7 @@ var ItemView = Backbone.View.extend({
 
   addToCartClick: function(e) {
     e.preventDefault();
-    var id = +this.item.get('id');
+    var id = this.item.get('id');
     this.trigger('addToCartClick', id);
   },
 

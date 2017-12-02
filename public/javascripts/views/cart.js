@@ -14,7 +14,7 @@ var CartView = Backbone.View.extend({
     if (this.collection.length > 0) {
       this.$el.html(this.template({
         item: this.collection.toJSON(),
-        total: this.collection.total,
+        total: this.collection.total
       }));
       this.$el.slideDown();
     } else {

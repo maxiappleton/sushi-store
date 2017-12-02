@@ -1,5 +1,6 @@
 var Router = Backbone.Router.extend({
   routes: {
+    '': 'menu',
     'menu': 'menu',
     "menu/:id": "itemDetail",
     "checkout": "checkout"
