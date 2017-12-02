@@ -1,0 +1,49 @@
+<div id="item_details">
+  <div>
+    <div class="nav prev">
+      <img src="../images/nav-prev.png" alt="prev">
+    </div>
+    <figure>
+      <img src="../images/{{image}}" alt="selected-item">
+    </figure>
+    <article>
+      <a class="close" href="/menu">+</a>
+      <h1>{{name}}</h1>
+      <p>{{description}}</p>
+      <footer>
+        <h2>${{formatPrice price}}</h2>
+        <a class="add-cart" href="#">Add to cart</a>
+      </footer>
+    </article>
+    <aside>
+      <h3>Nutritional Information</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>Protein</td>
+            <td>{{stats.protien}}</td>
+          </tr>
+          <tr>
+            <td>Fat (total)</td>
+            <td>{{stats.fat}}</td>
+          </tr>
+          <tr>
+            <td>Carbohydrate</td>
+            <td>{{stats.carbohydrate}}</td>
+          </tr>
+          <tr>
+            <td>Energy (kj)</td>
+            <td>{{stats.energy}}</td>
+          </tr>
+          <tr>
+            <td>Sugar</td>
+            <td>{{stats.sugar}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+    <div class="nav next">
+      <img src="../images/nav-next.png" alt="next">
+    </div>
+  </div>
+</div>

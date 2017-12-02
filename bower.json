@@ -1,0 +1,17 @@
+{
+  "name": "sushi",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Max Appleton <maxiappleton@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

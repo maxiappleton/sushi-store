@@ -1,0 +1,42 @@
+<div id="checkout">
+  <div class="img_top"></div>
+  <section>
+    <h1>Order Details</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th></th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each item}}
+        <tr data-id="{{id}}">
+          <td><img src="images/{{image}}" alt="cart-item"></td>
+          <td>{{name}}</td>
+          <td>
+            <span class="quantity_modifier">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </span>
+            <p>{{quantity}}</p>
+            <span class="quantity_modifier">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </span>
+          </td>
+          <td>${{formatPrice price}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <p>Total: <span class="total">${{formatPrice totalPrice}}</span></p>
+    <footer>
+      <a href="/">Cancel order</a>
+      <form action="/" method="post">
+        <input type="submit" value="ORDER NOW!">
+      </form>
+    </footer>
+  </section>
+  <div class="img_bottom"></div>
+</div>

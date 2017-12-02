@@ -1,0 +1,27 @@
+{
+  "name": "sushi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "bower": "bower",
+    "grunt": "grunt"
+  },
+  "dependencies": {
+    "bower": "^1.8.2",
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-contrib-handlebars": "^1.0.0",
+    "grunt-contrib-uglify": "^3.2.1",
+    "jade": "~1.11.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.9",
+    "express": "^4.15.5",
+    "grunt": "^1.0.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1",
+    "serve-favicon": "^2.4.5"
+  }
+}

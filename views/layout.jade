@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title Sushi Restaurant Website
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+    script(type="text/javascript" src="/javascripts/vendor/all.js")
+    script(type="text/javascript" src="/javascripts/handlebars_templates.js")
+    script(type="text/javascript" src="/javascripts/data/items.js")
+  body
+    header
+    main
+      #cart
+      #content
+      block content
+    footer
+
+    script(type="text/javascript" src="/javascripts/application.js")
+
+    script(type="text/javascript" src="/javascripts/models/item.js")
+
+    script(type="text/javascript" src="/javascripts/collections/items.js")
+    script(type="text/javascript" src="/javascripts/collections/cart.js")
+
+    script(type="text/javascript" src="/javascripts/views/header.js")
+    script(type="text/javascript" src="/javascripts/views/cart.js")
+    script(type="text/javascript" src="/javascripts/views/items.js")
+    script(type="text/javascript" src="/javascripts/views/item.js")
+    script(type="text/javascript" src="/javascripts/views/checkout.js")
+
+    script(type="text/javascript" src="/javascripts/router.js")
+
+    script(type="text/javascript").
+      App.init();
+
+    
