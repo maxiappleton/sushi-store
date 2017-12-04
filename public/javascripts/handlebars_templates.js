@@ -5,7 +5,7 @@ this["JST"]["cart"] = Handlebars.template({"1":function(container,depth0,helpers
 
   return "<li data-id=\""
     + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\"><figure><img src=\"../images/"
+    + "\"><figure><img src=\"/images/"
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
     + "\" alt=\"cart-item\"></figure><p>"
     + alias4(((helper = (helper = helpers.quantity || (depth0 != null ? depth0.quantity : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"quantity","hash":{},"data":data}) : helper)))
@@ -27,7 +27,7 @@ this["JST"]["checkout"] = Handlebars.template({"1":function(container,depth0,hel
 
   return "<tr data-id=\""
     + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\"><td><img src=\"images/"
+    + "\"><td><img src=\"/images/"
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
     + "\" alt=\"cart-item\"></td><td>"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
@@ -49,7 +49,7 @@ this["JST"]["checkout"] = Handlebars.template({"1":function(container,depth0,hel
 this["JST"]["header"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "<a class=\"logo\" href=\"/\"><img src=\"../images/logo.png\" alt=\"logo\"></a><div class=\"cart\"><a href=\"/menu\"><span class=\"left\">Shopping Cart</span><span class=\"right\"><!----><span class=\"count\">"
+  return "<a class=\"logo\" href=\"/\"><img src=\"/images/logo.png\" alt=\"logo\"></a><div class=\"cart\"><a href=\"/menu\"><span class=\"left\">Shopping Cart</span><span class=\"right\"><!----><span class=\"count\">"
     + container.escapeExpression(((helper = (helper = helpers.quantity || (depth0 != null ? depth0.quantity : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"quantity","hash":{},"data":data}) : helper)))
     + "</span> items</span></a></div>";
 },"useData":true});
@@ -57,7 +57,7 @@ this["JST"]["header"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":fu
 this["JST"]["item"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression, alias5=container.lambda;
 
-  return "<div id=\"item_details\"><div><div class=\"nav prev\"><img src=\"../images/nav-prev.png\" alt=\"prev\"></div><figure><img src=\"../images/"
+  return "<div id=\"item_details\"><div><div class=\"nav prev\"><img src=\"/images/nav-prev.png\" alt=\"prev\"></div><figure><img src=\"/images/"
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
     + "\" alt=\"selected-item\"></figure><article><a class=\"close\" href=\"/menu\">+</a><h1>"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
@@ -75,7 +75,7 @@ this["JST"]["item"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":func
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.stats : depth0)) != null ? stack1.energy : stack1), depth0))
     + "</td></tr><tr><td>Sugar</td><td>"
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.stats : depth0)) != null ? stack1.sugar : stack1), depth0))
-    + "</td></tr></tbody></table></aside><div class=\"nav next\"><img src=\"../images/nav-next.png\" alt=\"next\"></div></div></div>";
+    + "</td></tr></tbody></table></aside><div class=\"nav next\"><img src=\"/images/nav-next.png\" alt=\"next\"></div></div></div>";
 },"useData":true});
 
 this["JST"]["items"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
@@ -85,7 +85,7 @@ this["JST"]["items"] = Handlebars.template({"1":function(container,depth0,helper
     + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
     + "\"><article><a class=\"item-view\" href=\"/menu/"
     + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\"><header><figure><img src=\"images/"
+    + "\"><header><figure><img src=\"/images/"
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
     + "\" alt=\"menu-item\"></figure><h2 class=\"name\">"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))

@@ -7,15 +7,15 @@ var Router = Backbone.Router.extend({
   },
 
   menu: function() {
-    this.trigger('navigateToMenu');
+    App.renderMenu();  
   },
 
   itemDetail: function(id) {
-    this.trigger('navigateToItemDetail', id);
+    App.renderItemDetail(id);
   },
 
   checkout: function() {
-    this.trigger('navigateToCheckout');
+    App.renderCheckout();
   }
 });
 

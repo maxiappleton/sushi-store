@@ -32,11 +32,6 @@ App = {
   bindListeners: function() {
     _.extend(this, Backbone.Events);
 
-    // Router events to listen for
-    this.listenTo(this.router, 'navigateToMenu', this.renderMenu);
-    this.listenTo(this.router, 'navigateToItemDetail', this.renderItemDetail);
-    this.listenTo(this.router, 'navigateToCheckout', this.renderCheckout);
-
     // Cart events to listen for
     this.listenTo(this.allItemsView, 'addToCartClick', this.addToCart);
     this.listenTo(this.itemView, 'addToCartClick', this.addToCart);
