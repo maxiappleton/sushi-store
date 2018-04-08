@@ -8,3 +8,7 @@ Example of an interactive online retaurant ordering application using Pug and Ha
 2. Run `npm install` to download the required packages.
 3. Run `npm start` to set up the server.
 4. Navigate to `http://localhost:3000/` to see the website.
+
+## Demo
+
+https://mia-sushi-store.herokuapp.com/menu
